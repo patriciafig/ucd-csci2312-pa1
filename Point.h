@@ -24,7 +24,7 @@ public:
     double getX() const;
     double getY() const;
     double getZ() const;
-
+double distanceTo(const Point&)const; // new member function distanceTo
 
 };
 
