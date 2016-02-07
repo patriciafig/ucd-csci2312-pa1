@@ -59,7 +59,12 @@ double Point::getZ() const
 //Evaluates the distance between two points and returns it as
 // a double precision floating point
 
-double Point::distanceTo(const ::Point::Point &) const
+double Point::distanceTo(const::Point::Point &endPoint) const
 {
-    
+    double distance;  //returns a double
+
+    //Pythagorean Theorem to calculate distance
+    return sqrt(pow(x-endpoint.getX(),2)+ pow(y-endpoint.getY(),2)+ pow(z-endpoint.getZ(),2));
 }
+
+
