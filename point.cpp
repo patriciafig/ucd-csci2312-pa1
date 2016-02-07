@@ -19,9 +19,9 @@ Point::Point ()
 Point::Point (double initX, double initY, double initZ)
 
 {
-    x=initX;
-    y=initY;
-    z=initZ;
+    x = initX;
+    y = initY;
+    z = initZ;
 
 }
 
@@ -64,7 +64,7 @@ double Point::distanceTo(const::Point::Point &endPoint) const
     double distance;  //returns a double
 
     //Pythagorean Theorem to calculate distance
-    return sqrt(pow(x-endpoint.getX(),2)+ pow(y-endpoint.getY(),2)+ pow(z-endpoint.getZ(),2));
+    return sqrt(pow(x - endpoint.getX(), 2)+ pow(y - endpoint.getY(), 2)+ pow(z - endpoint.getZ(), 2));
 }
 
 
