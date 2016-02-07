@@ -1,5 +1,6 @@
 // Patricia Figueroa
 // A 3-dimensional point class!
+//class declaration for the class Point
 // Coordinates are double-precision floating point.
 
 #ifndef __POINT_H

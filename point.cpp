@@ -1,6 +1,6 @@
 //
 // Created by Patricia Figueroa on 2/4/16.
-//
+// Implementation for the class Point
 
  #include <cmath>
 //allows sqrt function to be implemented
@@ -64,7 +64,7 @@ double Point::distanceTo(const::Point::Point &endPoint) const
     double distance;  //returns a double
 
     //Pythagorean Theorem to calculate distance
-    return sqrt(pow(x - endpoint.getX(), 2)+ pow(y - endpoint.getY(), 2)+ pow(z - endpoint.getZ(), 2));
+    return sqrt(pow(x - endPoint.getX(), 2)+ pow(y - endPoint.getY(), 2)+ pow(z - endPoint.getZ(), 2));
 }
 
 

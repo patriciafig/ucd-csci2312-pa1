@@ -1,4 +1,3 @@
-// Patricia Figueroa
 
 #include <iostream>
 #include <iomanip>
