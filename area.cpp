@@ -1,16 +1,15 @@
 //
+// area.cpp
 // Created by Patricia Figueroa on 2/5/16.
 // computes area of three dimensional triangle
-//
+// implementation of computeArea ()
 
 #include "Point.h"
-#include <iostream>
 #include <cmath>
-#include <iomanip>
 
 using namespace std;
 
-double calculateArea(const Point &a, const Point &b, const Point &c)
+double computeArea(const Point &a, const Point &b, const Point &c)
 
 {
     double semi_perimeter;
@@ -20,16 +19,16 @@ double calculateArea(const Point &a, const Point &b, const Point &c)
 
     // sets variables for Area
 
-hypo = c.distanceTo(a);
-opp = a.distanceTo(b);
-adj = b. distanceTo(c);
+hypo =  c.distanceTo(a);
+opp  =  a.distanceTo(b);
+adj  =  b.distanceTo(c);
 
     // calculate semiperimeter
   semi_perimeter = (hypo + opp + adj)/2;
 
     // calculate area
 
-    return sqrt(semi_perimeter * (semi_perimeter-hypo)*(semi_perimeter - opp)* (semi_perimeter - adj));
+    return sqrt(semi_perimeter * (semi_perimeter - hypo)*(semi_perimeter - opp)* (semi_perimeter - adj));
 
 
 
